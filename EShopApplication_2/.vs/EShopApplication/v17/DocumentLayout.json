@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zoric\\Desktop\\IS\\2\\EShopApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ShopDb/True/SqlTable/dbo.Products.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E356F805-4D7F-4959-AF6F-6CC8B1E4FE8F}|EShop.Domain\\EShop.Domain.csproj|c:\\users\\zoric\\desktop\\is\\2\\eshopapplication\\eshop.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E356F805-4D7F-4959-AF6F-6CC8B1E4FE8F}|EShop.Domain\\EShop.Domain.csproj|solutionrelative:eshop.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFFAF3A7-7714-4E63-8EF4-34A9A73ECF42}|EShop.Service\\EShop.Service.csproj|c:\\users\\zoric\\desktop\\is\\2\\eshopapplication\\eshop.service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFFAF3A7-7714-4E63-8EF4-34A9A73ECF42}|EShop.Service\\EShop.Service.csproj|solutionrelative:eshop.service\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C5D84CE-D7E3-4676-A4F9-BC8D0FF4E700}|EShop.Repository\\EShop.Repository.csproj|c:\\users\\zoric\\desktop\\is\\2\\eshopapplication\\eshop.repository\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C5D84CE-D7E3-4676-A4F9-BC8D0FF4E700}|EShop.Repository\\EShop.Repository.csproj|solutionrelative:eshop.repository\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dbo.Products [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ShopDb/True/SqlTable/dbo.Products.sql",
+              "ToolTip": "dbo.Products [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-02-27T16:53:49.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS\\2\\EShopApplication\\EShop.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "EShop.Domain\\Class1.cs",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS\\2\\EShopApplication\\EShop.Domain\\Class1.cs",
+              "RelativeToolTip": "EShop.Domain\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T16:51:03.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS\\2\\EShopApplication\\EShop.Service\\Class1.cs",
+              "RelativeDocumentMoniker": "EShop.Service\\Class1.cs",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS\\2\\EShopApplication\\EShop.Service\\Class1.cs",
+              "RelativeToolTip": "EShop.Service\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T16:50:45.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS\\2\\EShopApplication\\EShop.Repository\\Class1.cs",
+              "RelativeDocumentMoniker": "EShop.Repository\\Class1.cs",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS\\2\\EShopApplication\\EShop.Repository\\Class1.cs",
+              "RelativeToolTip": "EShop.Repository\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T16:49:55.66Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

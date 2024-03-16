@@ -1,0 +1,12 @@
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\bin\Debug\net8.0\EShop.Service.deps.json
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\bin\Debug\net8.0\EShop.Service.dll
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\bin\Debug\net8.0\EShop.Service.pdb
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\obj\Debug\net8.0\EShop.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfoInputs.cache
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\obj\Debug\net8.0\EShop.Service.AssemblyInfo.cs
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\obj\Debug\net8.0\EShop.Service.csproj.CoreCompileInputs.cache
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\obj\Debug\net8.0\EShop.Service.sourcelink.json
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\obj\Debug\net8.0\EShop.Service.dll
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\obj\Debug\net8.0\refint\EShop.Service.dll
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\obj\Debug\net8.0\EShop.Service.pdb
+C:\Users\zoric\Desktop\IS\2\EShopApplication\EShop.Service\obj\Debug\net8.0\ref\EShop.Service.dll
