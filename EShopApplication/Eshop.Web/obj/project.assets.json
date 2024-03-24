@@ -3122,6 +3122,47 @@
             "rid": "win"
           }
         }
+      },
+      "EShop.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.3"
+        },
+        "compile": {
+          "bin/placeholder/EShop.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EShop.Domain.dll": {}
+        }
+      },
+      "EShop.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "EShop.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.3"
+        },
+        "compile": {
+          "bin/placeholder/EShop.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EShop.Repository.dll": {}
+        }
+      },
+      "EShop.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "EShop.Domain": "1.0.0",
+          "EShop.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EShop.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EShop.Service.dll": {}
+        }
       }
     }
   },
@@ -8626,10 +8667,28 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "EShop.Domain/1.0.0": {
+      "type": "project",
+      "path": "../EShop.Domain/EShop.Domain.csproj",
+      "msbuildProject": "../EShop.Domain/EShop.Domain.csproj"
+    },
+    "EShop.Repository/1.0.0": {
+      "type": "project",
+      "path": "../EShop.Repository/EShop.Repository.csproj",
+      "msbuildProject": "../EShop.Repository/EShop.Repository.csproj"
+    },
+    "EShop.Service/1.0.0": {
+      "type": "project",
+      "path": "../EShop.Service/EShop.Service.csproj",
+      "msbuildProject": "../EShop.Service/EShop.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "EShop.Domain >= 1.0.0",
+      "EShop.Repository >= 1.0.0",
+      "EShop.Service >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 8.0.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.2",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.2",
@@ -8646,11 +8705,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zoric\\Desktop\\IS\\1\\EShopApplication\\Eshop.Web\\Eshop.Web.csproj",
+      "projectUniqueName": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\Eshop.Web\\Eshop.Web.csproj",
       "projectName": "Eshop.Web",
-      "projectPath": "C:\\Users\\zoric\\Desktop\\IS\\1\\EShopApplication\\Eshop.Web\\Eshop.Web.csproj",
+      "projectPath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\Eshop.Web\\Eshop.Web.csproj",
       "packagesPath": "C:\\Users\\zoric\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zoric\\Desktop\\IS\\1\\EShopApplication\\Eshop.Web\\obj\\",
+      "outputPath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\Eshop.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8670,7 +8729,17 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
+              "projectPath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj"
+            },
+            "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj": {
+              "projectPath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Repository\\EShop.Repository.csproj"
+            },
+            "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Service\\EShop.Service.csproj": {
+              "projectPath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Service\\EShop.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -8739,5 +8808,25 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.AspNetCore.Identity.EntityFrameworkCore from 8.0.3 to 8.0.2. Reference the package directly from the project to select a different version. \r\n Eshop.Web -> EShop.Repository -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 8.0.3) \r\n Eshop.Web -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 8.0.2)",
+      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.AspNetCore.Identity.EntityFrameworkCore from 8.0.3 to 8.0.2. Reference the package directly from the project to select a different version. \r\n Eshop.Web -> EShop.Domain -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 8.0.3) \r\n Eshop.Web -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 8.0.2)",
+      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

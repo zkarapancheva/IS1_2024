@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iA7qNr1PrL25Kmqfxe8MyvjCyeWliG2AhJbiJPX4mnoj2acES2HtowL/sOP9vkF6CuTcBzM9MPoO2fpc91Mmsg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\zoric\\Desktop\\IS\\1\\EShopApplication\\Eshop.Web\\Eshop.Web.csproj",
+  "dgSpecHash": "aJZHvZDbhmulpPR5KKaj7QEjWNSs+pPPpnKH2f276GIlihjmjFnZW6n6VElhB/RCZqKObLaT3SBt5NqWcu6oag==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\Eshop.Web\\Eshop.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zoric\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\zoric\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -180,5 +180,24 @@
     "C:\\Users\\zoric\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\zoric\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.AspNetCore.Identity.EntityFrameworkCore from 8.0.3 to 8.0.2. Reference the package directly from the project to select a different version. \r\n Eshop.Web -> EShop.Repository -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 8.0.3) \r\n Eshop.Web -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 8.0.2)",
+      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.AspNetCore.Identity.EntityFrameworkCore from 8.0.3 to 8.0.2. Reference the package directly from the project to select a different version. \r\n Eshop.Web -> EShop.Domain -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 8.0.3) \r\n Eshop.Web -> Microsoft.AspNetCore.Identity.EntityFrameworkCore (>= 8.0.2)",
+      "libraryId": "Microsoft.AspNetCore.Identity.EntityFrameworkCore",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 ﻿
-@model EShop.Web.Models.DTO.ShoppingCartDto
+@model EShop.Domain.DTO.ShoppingCartDto
 
 @{
     ViewData["Title"] = "Index";
@@ -8,6 +8,9 @@
 
 <div class="container">
 
+    <div class="row-4">
+        <a asp-controller="ShoppingCart" asp-action="order" class="btn btn-info">Order now</a>
+    </div>
 
     <div class="row m-4">
         <table class="table">
@@ -37,7 +40,7 @@
                             <th scope="row">@(i + 1)</th>
                             <td>@item.Product.ProductName</td>
                             <td>@item.Quantity</td>
-                            <td>$@item.Product.ProductPrice</td>
+                            <td>$@item.Product.Price</td>
                             <td><a asp-controller="ShoppingCart" asp-action="DeleteFromShoppingCart" asp-route-id="@item.ProductId" class="btn btn-danger">Delete From ShoppingCart</a></td>
                         </tr>
                     }

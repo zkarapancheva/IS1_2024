@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zoric\\Desktop\\IS\\1\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {}
+    "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zoric\\Desktop\\IS\\1\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
+    "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zoric\\Desktop\\IS\\1\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
         "projectName": "EShop.Domain",
-        "projectPath": "C:\\Users\\zoric\\Desktop\\IS\\1\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
+        "projectPath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Domain\\EShop.Domain.csproj",
         "packagesPath": "C:\\Users\\zoric\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zoric\\Desktop\\IS\\1\\EShopApplication\\EShop.Domain\\obj\\",
+        "outputPath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication\\EShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -48,6 +48,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,8 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "7fisAi73uoz8tzKu35vmSK5umn2Mn/dRI0OP76AiHgGlqLP+v+gQB11hML9wzj2UgPzfEIBFkSs/0E+IgNn3aw==",
+  "dgSpecHash": "PD/oNNbYJ9tpJ0oiuU3hXOtTSKX+DEHy3Z0zbsX2nf/xk4VLQEKIjdlJ4vYaK0U9y64O3Sl42gCYgUihtVuqzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zoric\\Desktop\\IS\\2\\EShopApplication\\EShop.Service\\EShop.Service.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopApplication_2\\EShop.Service\\EShop.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.3\\microsoft.aspnetcore.cryptography.internal.8.0.3.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.3\\microsoft.aspnetcore.cryptography.keyderivation.8.0.3.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\8.0.3\\microsoft.aspnetcore.identity.entityframeworkcore.8.0.3.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.3\\microsoft.entityframeworkcore.analyzers.8.0.3.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.3\\microsoft.entityframeworkcore.relational.8.0.3.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.identity.core\\8.0.3\\microsoft.extensions.identity.core.8.0.3.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.identity.stores\\8.0.3\\microsoft.extensions.identity.stores.8.0.3.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
