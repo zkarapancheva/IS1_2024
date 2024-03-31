@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EShop.Domain.Domain
 {
-    public class ProductInOrder
+    public class ProductInOrder : BaseEntity
     {
-        public Guid Id { get; set; }
+
         public Guid ProductId { get; set; }
         public Product Product { get; set; }
         public Guid OrderId { get; set; }

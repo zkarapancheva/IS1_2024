@@ -11,9 +11,4 @@
     <ProjectReference Include="..\EShop.Repository\EShop.Repository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Implementation\" />
-  </ItemGroup>
-
 </Project>

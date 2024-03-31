@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace EShop.Domain.Domain
 {
-    public class Order
+    public class Order : BaseEntity
     {
-        public Guid Id { get; set; }
         public string userId { get; set; }
         public EShopApplicationUser User { get; set; }
         public ICollection<ProductInOrder> productInOrders { get; set; }
