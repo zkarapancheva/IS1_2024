@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|c:\\users\\zoric\\desktop\\is_1\\is1_2024\\eshopadminapplication\\eshopadminapplication\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|solutionrelative:eshopadminapplication\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|c:\\users\\zoric\\desktop\\is_1\\is1_2024\\eshopadminapplication\\eshopadminapplication\\eshopadminapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|solutionrelative:eshopadminapplication\\eshopadminapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|c:\\users\\zoric\\desktop\\is_1\\is1_2024\\eshopadminapplication\\eshopadminapplication\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|solutionrelative:eshopadminapplication\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|c:\\users\\zoric\\desktop\\is_1\\is1_2024\\eshopadminapplication\\eshopadminapplication\\models\\eshopapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|solutionrelative:eshopadminapplication\\models\\eshopapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|c:\\users\\zoric\\desktop\\is_1\\is1_2024\\eshopadminapplication\\eshopadminapplication\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|solutionrelative:eshopadminapplication\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|c:\\users\\zoric\\desktop\\is_1\\is1_2024\\eshopadminapplication\\eshopadminapplication\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|solutionrelative:eshopadminapplication\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|c:\\users\\zoric\\desktop\\is_1\\is1_2024\\eshopadminapplication\\eshopadminapplication\\models\\productinorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|solutionrelative:eshopadminapplication\\models\\productinorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|c:\\users\\zoric\\desktop\\is_1\\is1_2024\\eshopadminapplication\\eshopadminapplication\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2233FAB-FB00-47C7-B5EC-C6BADD678534}|EShopAdminApplication\\EShopAdminApplication.csproj|solutionrelative:eshopadminapplication\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "EShopAdminApplication\\Views\\Order\\Details.cshtml",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "EShopAdminApplication\\Views\\Order\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T17:07:11.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EShopAdminApplication",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
+              "RelativeDocumentMoniker": "EShopAdminApplication\\EShopAdminApplication.csproj",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\EShopAdminApplication.csproj",
+              "RelativeToolTip": "EShopAdminApplication\\EShopAdminApplication.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-22T16:57:55.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "EShopAdminApplication\\Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "EShopAdminApplication\\Views\\Order\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T16:56:21.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EShopApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Models\\EShopApplicationUser.cs",
+              "RelativeDocumentMoniker": "EShopAdminApplication\\Models\\EShopApplicationUser.cs",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Models\\EShopApplicationUser.cs",
+              "RelativeToolTip": "EShopAdminApplication\\Models\\EShopApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:48:14.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "EShopAdminApplication\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Models\\Order.cs",
+              "RelativeToolTip": "EShopAdminApplication\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:48:01.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "EShopAdminApplication\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "EShopAdminApplication\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwBcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:29:52.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductInOrder.cs",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Models\\ProductInOrder.cs",
+              "RelativeDocumentMoniker": "EShopAdminApplication\\Models\\ProductInOrder.cs",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Models\\ProductInOrder.cs",
+              "RelativeToolTip": "EShopAdminApplication\\Models\\ProductInOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:49:31.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "EShopAdminApplication\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication\\EShopAdminApplication\\Models\\Product.cs",
+              "RelativeToolTip": "EShopAdminApplication\\Models\\Product.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T16:49:53.057Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

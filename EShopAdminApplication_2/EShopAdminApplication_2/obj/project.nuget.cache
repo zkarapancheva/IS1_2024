@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "bvRmxhlhS2D3jG5h7+Lx/P5Ew2xuqPRHpx4cd56HkB0QIsTqodr9n0NZavAi0WXhBHyxjLObkSNO5nRR0LEnyQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zoric\\Desktop\\IS_1\\IS1_2024\\EShopAdminApplication_2\\EShopAdminApplication_2\\EShopAdminApplication_2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zoric\\.nuget\\packages\\microsoft.aspnet.webapi.client\\6.0.0\\microsoft.aspnet.webapi.client.6.0.0.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\zoric\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

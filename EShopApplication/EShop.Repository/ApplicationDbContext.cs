@@ -1,4 +1,5 @@
-﻿using EShop.Domain.Domain;
+﻿using Eshop.DomainEntities;
+using EShop.Domain.Domain;
 using EShop.Domain.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -13,8 +14,7 @@ namespace EShop.Repository
         public virtual DbSet<ProductInShoppingCart> ProductInShoppingCarts { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<ProductInOrder> ProductInOrders { get; set; }
-
-
+        public virtual DbSet<EmailMessage> EmailMessages { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
