@@ -1,8 +1,11 @@
-﻿using EShop.Domain.Domain;
+﻿using Eshop.DomainEntities;
+using EShop.Domain.Domain;
 using EShop.Domain.DTO;
+using EShop.Repository.Implementation;
 using EShop.Repository.Interface;
 using EShop.Service.Interface;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,13 +23,17 @@ namespace EShop.Service.Implementation
         private readonly IUserRepository _userRepository;
         private readonly IRepository<Order> _orderRepository;
         private readonly IRepository<ProductInOrder> _productInOrderRepository;
-        public ShoppingCartService (IRepository<ProductInOrder> _productInOrderRepository, IRepository<Order> _orderRepository, IUserRepository userRepository, IRepository<ShoppingCart> shoppingCartRepository, IRepository<ProductInShoppingCart> productInShoppingCartRepository)
+        private readonly IEmailService _emailService;
+
+
+        public ShoppingCartService (IRepository<ProductInOrder> _productInOrderRepository, IRepository<Order> _orderRepository, IUserRepository userRepository, IRepository<ShoppingCart> shoppingCartRepository, IRepository<ProductInShoppingCart> productInShoppingCartRepository, IEmailService emailService)
         {
             this._productInOrderRepository = _productInOrderRepository;
             this._orderRepository = _orderRepository;
             _userRepository = userRepository;
             _shoppingCartRepository = shoppingCartRepository;
             _productInShoppingCartRepository = productInShoppingCartRepository;
+            _emailService = emailService;
         }
         public bool AddToShoppingConfirmed(ProductInShoppingCart model, string userId)
         {
@@ -85,6 +92,9 @@ namespace EShop.Service.Implementation
                 var loggedInUser = _userRepository.Get(userId);
 
                 var userShoppingCart = loggedInUser.ShoppingCart;
+                EmailMessage message = new EmailMessage();
+                message.Subject = "Successfull order";
+                message.MailTo = loggedInUser.Email;
 
                 Order order = new Order
                 {
@@ -109,6 +119,28 @@ namespace EShop.Service.Implementation
                     }
                     ).ToList();
 
+
+
+
+
+
+
+                StringBuilder sb = new StringBuilder();
+
+                var totalPrice = 0.0;
+
+                sb.AppendLine("Your order is completed. The order conatins: ");
+
+                for (int i = 1; i <= productInOrder.Count(); i++)
+                {
+                    var currentItem = productInOrder[i - 1];
+                    totalPrice += currentItem.Quantity * currentItem.Product.Price;
+                    sb.AppendLine(i.ToString() + ". " + currentItem.Product.ProductName + " with quantity of: " + currentItem.Quantity + " and price of: $" + currentItem.Product.Price);
+                }
+
+                sb.AppendLine("Total price for your order: " + totalPrice.ToString());
+                message.Content = sb.ToString();
+
                 productInOrder.AddRange(lista);
 
                 foreach (var product in productInOrder)
@@ -118,6 +150,8 @@ namespace EShop.Service.Implementation
 
                 loggedInUser.ShoppingCart.ProductInShoppingCarts.Clear();
                 _userRepository.Update(loggedInUser);
+                this._emailService.SendEmailAsync(message);
+
                 return true;
             }
             return false;
@@ -125,3 +159,4 @@ namespace EShop.Service.Implementation
         
     }
 }
+

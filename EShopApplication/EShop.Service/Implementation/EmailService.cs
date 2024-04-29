@@ -1,6 +1,8 @@
 ﻿using Eshop.DomainEntities;
+using EShop.Domain;
 using EShop.Service.Interface;
 using MailKit.Security;
+using Microsoft.Extensions.Options;
 using MimeKit;
 using System;
 using System.Collections.Generic;
@@ -13,6 +15,13 @@ namespace EShop.Service.Implementation
 {
     public class EmailService : IEmailService
     {
+        private readonly MailSettings _mailSettings;
+
+        public EmailService(IOptions<MailSettings> mailSettings)
+        {
+            _mailSettings = mailSettings.Value;
+        }
+
         public async Task SendEmailAsync(EmailMessage allMails)
         {
             var emailMessage = new MimeMessage
@@ -33,11 +42,11 @@ namespace EShop.Service.Implementation
                 {
                     var socketOptions = SecureSocketOptions.Auto;
 
-                    await smtp.ConnectAsync("smtp-mail.outlook.com", 587, socketOptions);
+                    await smtp.ConnectAsync(_mailSettings.SmtpServer, 587, socketOptions);
 
-                    if (!string.IsNullOrEmpty("integrated_systems_finki@outlook.com"))
+                    if (!string.IsNullOrEmpty(_mailSettings.SmtpUserName))
                     {
-                        await smtp.AuthenticateAsync("integrated_systems_finki@outlook.com", "IntegratedSystems01!");
+                        await smtp.AuthenticateAsync(_mailSettings.SmtpUserName, _mailSettings.SmtpPassword);
                     }
                     await smtp.SendAsync(emailMessage);
 
@@ -51,4 +60,5 @@ namespace EShop.Service.Implementation
             }
         }
     }
+
 }

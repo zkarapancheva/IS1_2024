@@ -1,9 +1,11 @@
-﻿using EShop.Domain.Domain;
+﻿using Eshop.DomainEntities;
+using EShop.Domain.Domain;
 using EShop.Domain.DTO;
 using EShop.Repository.Interface;
 using EShop.Service.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -20,8 +22,10 @@ namespace EShop.Service.Implementation
         private readonly IRepository<ProductInShoppingCart> _productInShoppingCartRepository;
         private readonly IRepository<ProductInOrder> _productInOrderRepository;
         private readonly IUserRepository _userRepository;
+        private readonly IEmailService _emailService;
 
-        public ShoppingCartService(IRepository<ShoppingCart> shoppingCartRepository, IRepository<Product> productRepository, IRepository<Order> orderRepository, IRepository<ProductInShoppingCart> productInShoppingCartRepository, IRepository<ProductInOrder> productInOrderRepository, IUserRepository userRepository)
+
+        public ShoppingCartService(IRepository<ShoppingCart> shoppingCartRepository, IRepository<Product> productRepository, IRepository<Order> orderRepository, IRepository<ProductInShoppingCart> productInShoppingCartRepository, IRepository<ProductInOrder> productInOrderRepository, IUserRepository userRepository, IEmailService emailService)
         {
             _shoppingCartRepository = shoppingCartRepository;
             _productRepository = productRepository;
@@ -29,6 +33,7 @@ namespace EShop.Service.Implementation
             _productInShoppingCartRepository = productInShoppingCartRepository;
             _productInOrderRepository = productInOrderRepository;
             _userRepository = userRepository;
+            _emailService = emailService;
         }
 
         public bool AddToShoppingConfirmed(ProductInShoppingCart model, string userId)
@@ -44,7 +49,7 @@ namespace EShop.Service.Implementation
                 shoppingCart.ProductInShoppingCarts = new List<ProductInShoppingCart>(); ;
 
             shoppingCart.ProductInShoppingCarts.Add(model);
-            _shoppingCartRepository.Update(shoppingCart);  
+            _shoppingCartRepository.Update(shoppingCart);
             return true;
         }
 
@@ -86,7 +91,9 @@ namespace EShop.Service.Implementation
             var loggedInUser = _userRepository.Get(userId);
 
             var userShoppingCart = loggedInUser?.ShoppingCart;
-
+            EmailMessage message = new EmailMessage();
+            message.Subject = "Successfull order";
+            message.MailTo = loggedInUser.Email;
             Order order = new Order
             {
                 Id = Guid.NewGuid(),
@@ -106,15 +113,40 @@ namespace EShop.Service.Implementation
                     Order = order,
                     Quantity = z.Quantity
                 }).ToList();
+
+
+            StringBuilder sb = new StringBuilder();
+
+            var totalPrice = 0.0;
+
+            sb.AppendLine("Your order is completed. The order conatins: ");
+
+            for (int i = 1; i <= productsInOrder.Count(); i++)
+            {
+                var currentItem = productsInOrder[i - 1];
+                totalPrice += currentItem.Quantity * currentItem.Product.Price;
+                sb.AppendLine(i.ToString() + ". " + currentItem.Product.ProductName + " with quantity of: " + currentItem.Quantity + " and price of: $" + currentItem.Product.Price);
+            }
+
+            sb.AppendLine("Total price for your order: " + totalPrice.ToString());
+            message.Content = sb.ToString();
+
             productsInOrder.AddRange(rez);
 
             foreach (var product in productsInOrder)
             {
                 _productInOrderRepository.Insert(product);
             }
+
             loggedInUser.ShoppingCart.ProductInShoppingCarts.Clear();
             _userRepository.Update(loggedInUser);
+            this._emailService.SendEmailAsync(message);
+
             return true;
         }
     }
 }
+
+
+
+

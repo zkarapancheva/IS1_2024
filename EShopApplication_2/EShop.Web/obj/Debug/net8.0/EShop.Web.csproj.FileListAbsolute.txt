@@ -583,3 +583,7 @@ C:\Users\zoric\Desktop\IS_1\IS1_2024\EShopApplication_2\EShop.Web\bin\Debug\net8
 C:\Users\zoric\Desktop\IS_1\IS1_2024\EShopApplication_2\EShop.Web\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\zoric\Desktop\IS_1\IS1_2024\EShopApplication_2\EShop.Web\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\zoric\Desktop\IS_1\IS1_2024\EShopApplication_2\EShop.Web\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\zoric\Desktop\IS_1\IS1_2024\EShopApplication_2\EShop.Web\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\zoric\Desktop\IS_1\IS1_2024\EShopApplication_2\EShop.Web\bin\Debug\net8.0\MailKit.dll
+C:\Users\zoric\Desktop\IS_1\IS1_2024\EShopApplication_2\EShop.Web\bin\Debug\net8.0\MimeKit.dll
+C:\Users\zoric\Desktop\IS_1\IS1_2024\EShopApplication_2\EShop.Web\bin\Debug\net8.0\Stripe.net.dll
