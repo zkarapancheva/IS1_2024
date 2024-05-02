@@ -5,7 +5,12 @@
 }
 @model List<EShopAdminApplication.Models.Order>
 
+
 <div class="container">
+    <div class="row">
+        <a asp-controller="Order" asp-action="ExportAllOrders" class="btn btn-info">Export Orders</a>
+    </div>
+
     <div class="row m-5">
         <table class="table">
             <thead>
@@ -19,7 +24,7 @@
                     <th>
                         Number of products
                     </th>
-                    <th>
+                    <th></th>
                     <th></th>
                 </tr>
             </thead>
@@ -39,6 +44,10 @@
                         <td>
                             |
                             <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">View Order</a>
+                        </td>
+                        <td>
+                            |
+                            <a asp-action="CreateInvoice" asp-route-id="@item.Id" class="btn btn-info">Create Invoice</a>
                         </td>
                     </tr>
                 }

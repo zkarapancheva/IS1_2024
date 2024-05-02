@@ -1,6 +1,9 @@
 ﻿using EShop.Domain.Domain;
+using EShop.Domain.DTO;
+using EShop.Domain.Identity;
 using EShop.Service.Interface;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Eshop.Web.Controllers.API
@@ -10,9 +13,11 @@ namespace Eshop.Web.Controllers.API
     public class AdminController : ControllerBase
     {
         private readonly IOrderService _orderService;
-        public AdminController (IOrderService orderService)
+        private readonly UserManager<EShopApplicationUser> _userManager;
+        public AdminController (IOrderService orderService, UserManager<EShopApplicationUser> userManager)
         {
             _orderService = orderService;
+            _userManager = userManager;
         }
         [HttpGet("[action]")]
         public List<Order> GetAllOrders()
@@ -23,6 +28,36 @@ namespace Eshop.Web.Controllers.API
         public Order GetDetails(BaseEntity id)
         {
             return this._orderService.GetDetailsForOrder(id);
+        }
+
+        [HttpPost("[action]")]
+        public bool ImportAllUsers(List<UserRegistrationDto> model)
+        {
+            bool status = true;
+
+            foreach (var item in model)
+            {
+                var userCheck = _userManager.FindByEmailAsync(item.Email).Result;
+
+                if (userCheck == null) {
+                    var user = new EShopApplicationUser
+                    {
+                        UserName = item.Email,
+                        NormalizedUserName = item.Email,
+                        Email = item.Email,
+                        EmailConfirmed = true,
+                        ShoppingCart = new ShoppingCart()
+                    };
+
+                    var result = _userManager.CreateAsync(user, item.Password).Result;
+                    status = status && result.Succeeded;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            return status;
         }
 
     }

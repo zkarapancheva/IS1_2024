@@ -121,9 +121,9 @@ namespace EShop.Service.Implementation
 
             sb.AppendLine("Your order is completed. The order conatins: ");
 
-            for (int i = 1; i <= productsInOrder.Count(); i++)
+            for (int i = 1; i <= rez.Count(); i++)
             {
-                var currentItem = productsInOrder[i - 1];
+                var currentItem = rez[i - 1];
                 totalPrice += currentItem.Quantity * currentItem.Product.Price;
                 sb.AppendLine(i.ToString() + ". " + currentItem.Product.ProductName + " with quantity of: " + currentItem.Quantity + " and price of: $" + currentItem.Product.Price);
             }

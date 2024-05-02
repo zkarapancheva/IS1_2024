@@ -44,5 +44,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "EShop.Web.Controllers.API.AdminController",
+    "Method": "ImportAllUsers",
+    "RelativePath": "api/Admin/ImportAllUsers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "System.Collections.Generic.List\u00601[[EShop.Domain.DTO.UserRegistrationDto, EShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

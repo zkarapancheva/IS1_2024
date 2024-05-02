@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EShopAdminApplication_2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7550a1f91fc32080830007477b697b7cb6cb0fdc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3379dce866dd0224538b22f6e6954c41619d5392")]
 [assembly: System.Reflection.AssemblyProductAttribute("EShopAdminApplication_2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EShopAdminApplication_2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

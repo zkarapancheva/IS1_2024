@@ -7,6 +7,10 @@
 @model List<EShopAdminApplication_2.Models.Order>
 
 <div class="container">
+    <div class="row">
+        <a asp-action="ExportOrders" class="btn btn-danger">Export All Orders</a></td>
+
+    </div>
 
     <div class="row m-4">
         <table class="table">
@@ -15,6 +19,7 @@
                     <th scope="col">#</th>
                     <th scope="col">Customer name</th>
                     <th scope="col">Number of products</th>
+                    <th></th>
                     <th></th>
                 </tr>
             </thead>
@@ -36,7 +41,7 @@
                             <td>@item.User.UserName</td>
                             <td>@item.productInOrders.Count</td>
                             <td><a asp-action="Details" asp-route-Id="@item.Id" class="btn btn-danger">Details</a></td>
-
+                            <td><a asp-action="CreateInvoice" asp-route-Id="@item.Id" class="btn btn-danger">Create Invoice</a></td>
                         </tr>
 
                     }

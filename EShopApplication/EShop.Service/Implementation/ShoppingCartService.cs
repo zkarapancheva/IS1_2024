@@ -120,20 +120,15 @@ namespace EShop.Service.Implementation
                     ).ToList();
 
 
-
-
-
-
-
                 StringBuilder sb = new StringBuilder();
 
                 var totalPrice = 0.0;
 
                 sb.AppendLine("Your order is completed. The order conatins: ");
 
-                for (int i = 1; i <= productInOrder.Count(); i++)
+                for (int i = 1; i <= lista.Count(); i++)
                 {
-                    var currentItem = productInOrder[i - 1];
+                    var currentItem = lista[i - 1];
                     totalPrice += currentItem.Quantity * currentItem.Product.Price;
                     sb.AppendLine(i.ToString() + ". " + currentItem.Product.ProductName + " with quantity of: " + currentItem.Quantity + " and price of: $" + currentItem.Product.Price);
                 }
